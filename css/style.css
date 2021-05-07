@@ -12,33 +12,51 @@
 }
 
 body{
+    background-image: url(../img/background3.jpg);
+    /* background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover; */
     font-family: "Itim";
     text-align:center;
     margin : 0 auto;
     color : #2E3F99;
+    font-size : 19px;
 }
 
+main,footer{
+    background : rgba(255,255,255,0.75);
+}
+
+section{
+    margin : 55px 20px;
+}
 
 .hidden{
     display:none;
 }
 
-header{
+
+/******************************
+*            HEADER           *
+******************************/
+
+body header{
     background: url(../img/fondecran.jpg) center;
     background-size : cover;
 }
 
 header div{
-    background:linear-gradient(180deg,rgba(255,255,255,0.2),rgba(255,255,255,1)) ;
+    background:linear-gradient(180deg,rgba(255,255,255,0.4),rgba(255,255,255,1)) ;
 }
 
 
-header img{
+header .photoProfil{
     width:170px;;
     display:block;
     margin:0 auto;
     padding-bottom:15px;
     padding-top:30px;
+    border-radius: 100%;
 }
 
 h1{
@@ -48,44 +66,167 @@ h1{
 #nav{
     display:flex;
     flex-direction: column;
-    margin: 30px 0;
+    margin: 30px 0 0;
 }
 
 #nav a{
     text-decoration:none;
+    color:#ce0033;
+    margin: 15px 0;
+    font-size: 25px;
+}
 
+#nav a img{
+    display:block;
+    margin:0 auto;
+    width:40px;
+}
+
+#nav a .fa{
+    display:block;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+/******************************
+*             MAIN            *
+******************************/
+
+main h2{
+    color:dodgerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    text-decoration:underline;
+    font-size: 23px;
+}
+
+section ul{
+    border-left : 1px dashed grey;
+    border-bottom : 1px dashed grey;
+}
+
+#raisons{
+    margin-top: 0;
+    padding-top : 50px;
+}
+
+#raisons img{
+    width:200px;
+}
+
+#raisons ul{
+    padding-left: 0;
+}
+
+#raisons ul li{    
+    text-align: left;
+    margin: 0 12%;
+}
+
+#competences h2{
+    margin-bottom: 40px;
+}
+
+#competences ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
+#competences ul li{
+    margin:15px 10px;
+    width: 75px;
+}
+
+#competences ul li p{
+    margin:0;
+}
+
+#competences img{
+    display:block;
+    margin:0 auto;
+    height:40px;
+}
+
+#liens{
+    margin-bottom:0;
+}
+
+
+#liens ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom:0;
+}
+
+#liens ul li{
+    margin:20px;
+    width: 100px;
+}
+
+#liens ul li a{
+    text-decoration:none;
+}
+
+#liens ul li a p{
+    margin:0;
+}
+
+#liens img{
+    display:block;
+    margin:0 auto;
+    height:40px;
+    border-radius: 100%;
+}
+
+#liens .forever p:nth-of-type(2){
+    font-size:13px;
+}
 
 /******************************
 *            FOOTER           *
 ******************************/
 
-
-/******************** Adresse, Mail, Téléphone ****************/
-#address{
-    display:flex;
-    flex-direction: column;
-    margin-top: 30px;
+#contact{
+    color: rgba(39, 172, 25,1);
 }
 
-#address address{
+#contact h3{
+    margin-top:0;
+    padding-top : 50px;
+}
+
+#contact .address{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact .address address{
+    display:flex;
     align-items:center;
     justify-content: center;
-    margin:10px 0;
-    color:rgba(58,157,35,1);
     font-size:17px;
+    margin: 10px 20px;
 }
 
-#address .fa{
+#contact .fa{
     font-size:20px;
-    color:rgba(58,157,35,1);
 }
 
-#address a{
+#contact .address address a{
     text-decoration: none;
-    color:rgba(52,201,36,1);
+    color: rgba(39, 172, 25,1);
+    display:flex;
+    flex-direction: column;
+    width:250px;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 10px;
 }
